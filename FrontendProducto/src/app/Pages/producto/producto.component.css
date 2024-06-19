@@ -1,0 +1,49 @@
+
+.contenedorForm{
+    background: #C3C3C3;    
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+/*Estilos de formulario*/
+.formulario{
+    grid-column: 2;
+    grid-row: 2/4;
+    text-align: center;
+    background: #B0B0B0;
+    width: 70%;
+    height: 42vh;
+    margin-left: 15%;
+    display: grid;
+    padding: 1%;
+    border-radius: 9px;
+}
+
+input {
+    background: #7A7A7A;
+    border: 1px solid #7A7A7A;
+    border-radius: 9px;
+    padding: 1%;
+}
+
+.inputOrder{
+    display: grid;
+    justify-items: center
+}
+
+.buttonAccion{
+    margin-top: 5%;
+}
+
+.buttonGuardar{
+    background: #28D15A;
+    border-radius: 9px;
+    border: 1px solid #28D15A;
+}
+
+.buttonCancelar{
+    background: #FC1E26;
+    border-radius: 9px;
+    border: 1px solid #FC1E26;
+}

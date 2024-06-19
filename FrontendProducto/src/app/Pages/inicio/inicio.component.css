@@ -1,0 +1,43 @@
+.contenedorTabla{
+    background: #C3C3C3;    
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.divTabla{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+/*Estilo añadir nuevo Producto*/
+.buttonAnadir{
+    background: #28D15A !important;
+}
+
+/*Estilo tabla*/
+.tablaStilo{
+    margin-top: 20px;
+    background: #B0B0B0 !important;
+}
+
+tr.mat-mdc-row.mdc-data-table__row.cdk-row {
+    height: 9vh !important;
+}
+
+.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-header-row, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table .mat-mdc-header-cell {
+    background: inherit;
+    text-align: center;
+}
+
+/*Estilo button acciones*/
+.buttonEdit{
+    background: white !important;
+    color: black;
+}
+
+.buttonDelete{
+    background: white !important;
+    color: black;
+}

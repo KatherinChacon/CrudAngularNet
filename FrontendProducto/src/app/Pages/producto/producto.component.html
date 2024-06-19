@@ -1,0 +1,32 @@
+<div class="contenedorForm">
+    <form [formGroup]="formProducto" class="formulario">
+        <div class="inputOrder">
+            <label>Nombre Producto</label>
+            <input formControlName="nombre">
+        </div>
+        <div class="inputOrder">
+            <label>descripcion</label>
+            <input  formControlName="descripcion">
+        </div>
+        <div class="inputOrder">
+            <label>precio</label>
+            <input type="number" formControlName="precio">
+        </div>
+        <div class="inputOrder">
+            <label>stock</label>
+            <input type="number" formControlName="stock">
+        </div>
+
+        <div  class="buttonAccion">
+            <button class="buttonGuardar" (click)="guardar()">
+                Guardar
+            </button>
+            &nbsp; 
+            <button class="buttonCancelar" (click)="volver()">
+                Cancelar
+            </button>
+
+        </div>
+    </form>
+
+</div>

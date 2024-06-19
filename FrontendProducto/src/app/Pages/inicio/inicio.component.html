@@ -1,0 +1,50 @@
+<div class="contenedorTabla">
+    <div class="divTabla">
+        <button mat-flat-button (click)="nuevo()" class="buttonAnadir">
+            <mat-icon>plus_one</mat-icon>
+            Crear Nuevo Producto
+        </button>
+
+        <table mat-table [dataSource]="listaProducto" class="mat-elevation-z8 tablaStilo" >
+
+            <ng-container matColumnDef="nombre">
+                <th mat-header-cell *matHeaderCellDef> Nombre Producto </th>
+                <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="descripcion">
+                <th mat-header-cell *matHeaderCellDef> Descripción </th>
+                <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="precio">
+                <th mat-header-cell *matHeaderCellDef> Precio </th>
+                <td mat-cell *matCellDef="let element"> {{element.precio}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="stock">
+                <th mat-header-cell *matHeaderCellDef> Stock </th>
+                <td mat-cell *matCellDef="let element"> {{element.stock}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="accion">
+                <th mat-header-cell *matHeaderCellDef> Acciones </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-fab class="buttonEdit" (click)="editar(element)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    &nbsp; 
+                    <button mat-fab class="buttonDelete"  (click)="eliminar(element)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+
+</div>
