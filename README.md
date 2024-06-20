@@ -1,88 +1,27 @@
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--config-env=<name>=<envvar>] <command> [<args>]
+Instrucciones de ejecución local
 
-These are common Git commands used in various situations:
+Con el fin de orientar al usuario es necesario realizar la clonación del repositorio, una vez clonado el repositorio en su máquina local dar continuidad a los siguientes pasos:
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
-
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--config-env=<name>=<envvar>] <command> [<args>]
-
-These are common Git commands used in various situations:
-
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
-
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+1. Ingrese a la carpeta donde se clonó el repositorio
+2. Posteriormente visualizará tres carpetas.
+3. Ingresar a la carpeta denominada "ApiProductos"
+4. Dar doble clic en la solución denominada "ApiProductos.sln"
+Interacciones en Framework Visual Studio 
+6. Una vez la solución esté abierta en .net dar doble clic al archivo denominado "appsettings.json", el cual está ubicado en el explorador de soluciones.
+7. En el archivo "appsettings.json" se encuentra ubicada la cadena de conexión de la base de datos denominada "ConnectionStrings", es necesario realizar el cambio de la variable Server de acuerdo a la instancia del servidor local de base de datos que tenga en su equipo.
+8. Posteriormente, en el explorador de soluciones visualizará una carpeta denominada "Migrations", es necesario dar clic derecho y eliminar.
+   ![image](https://github.com/KatherinChacon/CrudAngularNet/assets/127790075/8231738e-3e60-4423-9932-29517dde3bb8)
+9. Una vez elimianda la carpeta "Migrations", dirigirse a Herramientas ubicada en la parte superior de Visual Studio, dar clic en Herramientas>Administrador de paquetes Nuget>Consola de administrador de paquetes.
+10. Una vez se visualice la Consola de administrador de paquetes, colocar el comando "Add-Migration initial" y dar enter.
+11. Posteriormente esperar que finalice el proceso y se visualiza una carpeta denominada "Migrations".
+12. Nuevamente en la Consola de administrador de paquetes, colocar el comando "Update-database" y dar enter.
+13. Una vez se finalice con éxito este proceso, se podrá visualizar la creación de la base de datos en Sql Server.
+14. Finalmente, ejecutar el proyecto dando clic en el icono de play ubicado en la parte superior de Visual Studio.
+Interacciones en Visual Studio Code
+16. Abra Visual Studio Code
+17. Clic en Abrir Carpeta y buscar la ruta donde se clonó el repositorio carpeta denominada "FrontendProducto".
+18. Una vez se tenga la carpeta abierta en visual Studio Code, abrir una Terminal.
+19. colocar los siguientes comando:
+    18.1 ng install -g @angular/cli@17, espere hasta que finalice el proceso y permita ingresar el sisguiente comando.
+    18.2 ng add @angular/material@17, espere hasta que finalice el proceso.
+20. Finalmente, colocar el comando servidor ng server --open para ejecutar el servidor, esperar hasta que se abra una ventana del navegador predeterminado y podra realizar una interacción con el sistema, generando la creación, actualización, eliminación y listado d elos productos. 
