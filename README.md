@@ -18,10 +18,10 @@ Interacciones en Framework Visual Studio
 13. Una vez se finalice con éxito este proceso, se podrá visualizar la creación de la base de datos en Sql Server.
 14. Finalmente, ejecutar el proyecto dando clic en el icono de play ubicado en la parte superior de Visual Studio.
 Interacciones en Visual Studio Code
-16. Abra Visual Studio Code
-17. Clic en Abrir Carpeta y buscar la ruta donde se clonó el repositorio carpeta denominada "FrontendProducto".
-18. Una vez se tenga la carpeta abierta en visual Studio Code, abrir una Terminal.
-19. colocar los siguientes comando:
-    18.1 ng install -g @angular/cli@17, espere hasta que finalice el proceso y permita ingresar el sisguiente comando.
-    18.2 ng add @angular/material@17, espere hasta que finalice el proceso.
+15. Abra Visual Studio Code
+16. Clic en Abrir Carpeta y buscar la ruta donde se clonó el repositorio carpeta denominada "FrontendProducto".
+17. Una vez se tenga la carpeta abierta en visual Studio Code, abrir una Terminal.
+18. colocar los siguientes comando:
+    ng install -g @angular/cli@17, espere hasta que finalice el proceso y permita ingresar el sisguiente comando.
+    ng add @angular/material@17, espere hasta que finalice el proceso.
 20. Finalmente, colocar el comando servidor ng server --open para ejecutar el servidor, esperar hasta que se abra una ventana del navegador predeterminado y podra realizar una interacción con el sistema, generando la creación, actualización, eliminación y listado d elos productos. 
