@@ -22,6 +22,8 @@ Interacciones en Visual Studio Code
 16. Clic en Abrir Carpeta y buscar la ruta donde se clonó el repositorio carpeta denominada "FrontendProducto".
 17. Una vez se tenga la carpeta abierta en visual Studio Code, abrir una Terminal.
 18. colocar los siguientes comando:
-    ng install -g @angular/cli@17, espere hasta que finalice el proceso y permita ingresar el sisguiente comando.
+    
+    ng install -g @angular/cli@17, espere hasta que finalice el proceso y permita ingresar el siguiente comando.
+    
     ng add @angular/material@17, espere hasta que finalice el proceso.
-20. Finalmente, colocar el comando servidor ng server --open para ejecutar el servidor, esperar hasta que se abra una ventana del navegador predeterminado y podra realizar una interacción con el sistema, generando la creación, actualización, eliminación y listado d elos productos. 
+19. Finalmente, colocar el comando servidor ng server --open para ejecutar el servidor, esperar hasta que se abra una ventana del navegador predeterminado y podra realizar una interacción con el sistema, generando la creación, actualización, eliminación y listado d elos productos. 
